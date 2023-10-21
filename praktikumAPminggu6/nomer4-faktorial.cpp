@@ -1,18 +1,19 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Masukkan bilangan bulat positif (1-33): ";
-    cin >> n;
+    int nilai;
+    double faktorial = 1;
 
-    int faktorial = 1;
+    cout << "Masukkan bilangan : ";
+    cin >> nilai;
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= nilai; i++) {
         faktorial *= i;
     }
 
-    cout << "Faktorial dari " << n << " adalah " << faktorial << endl;
+    cout << nilai << "! = " << fixed << setprecision(0) << faktorial << endl;
 
     return 0;
 }
