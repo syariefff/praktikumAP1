@@ -2,16 +2,30 @@
 using namespace std;
 
 int main() {
-  double S = 0;
-  for (int i = 1; i <= 1000; i++) {
-    if (i % 2 == 1) {
-      S += 1.0/i; 
-    } else {
-      S -= 1.0/i;
+    int nilai;
+    cout << "Masukkan nilai: ";
+    cin >> nilai;
+
+    if (nilai > 1000) {
+        cout << "Nilai 'n' tidak boleh lebih besar dari seribu" << endl;
+        return 1;
     }
-  }
 
-  cout << "Nilai S = " << S << endl;
+    double s = 1.0;  
 
-  return 0;
+    cout << "1";
+
+    for (int i = 2; i <= nilai; i++) {
+        if (i % 2 == 0) {
+            cout << " - 1/" << i;
+            s -= (1.0 / i);
+        } else {
+            cout << " + 1/" << i;
+            s += (1.0 / i);
+        }
+    }
+
+    cout << " = " << s << endl;
+
+    return 0;
 }
