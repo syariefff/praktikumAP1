@@ -10,7 +10,7 @@ struct Barang {
 };
 
 int main() {
-    const int full = 2; 
+    const int full = 20; 
     Barang barang[full];
 
     cout << "PENJUALAN BARANG" << endl;
