@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-const int JUMLAH_BARANG = 5;
+const int JUMLAH_BARANG = 10;
 
 int main() {
   string namaBarang[JUMLAH_BARANG];
