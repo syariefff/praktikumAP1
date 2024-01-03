@@ -32,7 +32,7 @@ int main() {
     const int full = 20; 
     Data data[full];
 
-    cout << "PENJUALAN BARANG" << endl;
+    cout << "DATA ANAK" << endl;
     for (int i = 0; i < full; i++) {
         cout << endl;
         cout << "Nama: ";
